@@ -31,12 +31,12 @@ namespace lab
                         break;                    
                 }
 
-                string historyEntry = $"{operand1} {operatorSymbol} {operand2} = {result}";
-                listBox1.Items.Add(historyEntry);
+                string history = $"{operand1} {operatorSymbol} {operand2} = {result}";
+                listBox1.Items.Add(history);
             }
             else
             {
-                MessageBox.Show("Error: Invalid input");
+                MessageBox.Show("Error: Please enter numbers input");
             }
 
         }
@@ -54,9 +54,7 @@ namespace lab
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-       
+        }       
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
